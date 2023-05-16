@@ -18,12 +18,13 @@ permissions:
   contents: read
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
+      - test
   pull_request:
     branches:
-      - main
+      - test
 
 env:
   PROTOC_VERSION: 3.17.3
